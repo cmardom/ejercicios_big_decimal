@@ -3,7 +3,7 @@ package org.iesvdm;
 import java.math.BigDecimal;
 
 public class InteresCompuesto {
-
+//PRUEBA
     private BigDecimal p;
     private BigDecimal r;
     private int n;
