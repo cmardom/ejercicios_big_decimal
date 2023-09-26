@@ -56,6 +56,10 @@ public class InteresCompuesto {
         // n. numero de veces que se capitaliza el interes por año
         // t. numero de años
         BigDecimal base = r.divide(BigDecimal.valueOf(n), 10, BigDecimal.ROUND_HALF_UP).add(BigDecimal.ONE);
+        // el 10 en el metodo divide especifica el número de decimales
+        // round half up: redondea al número más proximo y si los dos son equidistantes, al mayor
+        //add: añade 1 al resultado de la division
+
         int exponente = n*t;
         return p.multiply(base.pow(exponente));
     }
