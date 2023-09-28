@@ -22,7 +22,12 @@ public class InteresCompuestoTest {
         InteresCompuesto interesCompuesto = new InteresCompuesto(p, r, 1);
         BigDecimal cantidadFinal = interesCompuesto.calculaMontoFinal(periodos);
 
+        //redondeo
+        cantidadFinal = cantidadFinal.setScale(2, RoundingMode.HALF_UP);
+
+
         BigDecimal cantidadEsperada = new BigDecimal("1628.89");
+
 
         Assertions.assertEquals(new BigDecimal("1628.89"), cantidadFinal);
     }
