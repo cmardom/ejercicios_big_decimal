@@ -52,7 +52,7 @@ public class TODO {
             Posicion posDestino = new Posicion(new BigDecimal("48.8566"), new BigDecimal("2.3522"));
 
             BigDecimal distancia = distanciaKm(posOrigen, posDestino);
-            System.out.println("Distance: " + distancia + " kilometers");
+            System.out.println("Distancia: " + distancia + " kilometros");
         }
     }
 }
